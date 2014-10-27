@@ -7,12 +7,10 @@ categories:
 ---
 
 ##准备工作##
-申请一个github帐号:hongxin1988
-
+申请一个github帐号:hongxin1988<br>
 建一个名为hongxin1988.github.io的repo
 ##安装msysgit##
-到[这里](http://msysgit.github.io/)下载msysgit并安装
-
+到[这里](http://msysgit.github.io/)下载msysgit并安装<br>
 配置ssh
 	```
 		ssh-keygen -C github-account-email -t rsa
@@ -80,11 +78,11 @@ source 目录下保存了所有的markdown源文件，是博客的原始数据�
 
 
 ##参考资料##
- - [octopress官方主页](http://octopress.org/docs/deploying/github/)
- - [GitHub Pages 使用github + Octopress 搭建免费博客](http://linglong117.blog.163.com/blog/static/27714547201332895056387/)
- - [利用Octopress搭建一个Github博客](http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/)
- - [GotGitHub](http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html)
- - [为 Octopress 添加多说评论系统](http://havee.me/internet/2013-02/add-duoshuo-commemt-system-into-octopress.html)
+[octopress官方主页](http://octopress.org/docs/deploying/github/)<br>
+[GitHub Pages 使用github + Octopress 搭建免费博客](http://linglong117.blog.163.com/blog/static/27714547201332895056387/)<br>
+[利用Octopress搭建一个Github博客](http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/)
+[GotGitHub](http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html)<br>
+[为 Octopress 添加多说评论系统](http://havee.me/internet/2013-02/add-duoshuo-commemt-system-into-octopress.html)
 
 ##感谢##
  [biaobiaoqi](http://biaobiaoqi.me) 和 [heapstacks](http://heapstacks.com) 的指导让我在最短的时间内搭建好我的博客。 
