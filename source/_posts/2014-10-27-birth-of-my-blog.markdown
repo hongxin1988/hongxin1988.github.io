@@ -16,19 +16,19 @@ categories:
 配置ssh
 	```
 		ssh-keygen -C github-account-email -t rsa
-	```
+	```<br>
+将 C:\Users\hongxin\.ssh下id_rsa.pub文件中的内容加到github网站帐户settings下的ssh keys
+
 ##安装octopress##
 Octopress2.0需要ruby1.9.3,我的机子是windows，可以通过RubyInstaller来安装.到[这里](http://rubyinstaller.org/downloads/)下载[Ruby1.9.3-p545](http://dl.bintray.com/oneclick/rubyinstaller/ruby-1.9.3-p545-i386-mingw32.7z?direct)以及[DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe](https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe) 安装即可。也就是下面的1、2两步
 <!--more-->
-安装ruby，比较简单，直接双击即可。
-
+安装ruby，比较简单，直接双击即可。<br>
 安装DevKit.先解压。然后进入目录，如下所示：
 
 	cd C:\DevKit<br>
 	ruby dk.rb init<br>
 	ruby dk.rb install<br>
 	gem install rdiscount --platform=ruby
-
 安装octopress
 
 	cd d:\github
