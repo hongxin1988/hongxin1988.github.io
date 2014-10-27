@@ -58,7 +58,7 @@ source 目录下保存了所有的markdown源文件，是博客的原始数据�
 ##来一发 Hello World##
 
 	rake new_post["hello world"] # 这个命令会在octopress\source_posts目录下建一个markdown文件。按照markdown的格式往这个文件里写博客的内容即可。
-	rake generate** # 生成最终的博客文件
+	rake generate # 生成最终的博客文件
 	rake deploy # 将public目录下的内容拷贝到\_deploy目录下，并把内容commit且push到master分支。
 访问博客主页，http://hongxin1988.github.io 即可。好兴奋  ^_^
 
