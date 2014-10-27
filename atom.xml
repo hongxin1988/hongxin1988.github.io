@@ -4,7 +4,7 @@
   <title><![CDATA[Komac的博客]]></title>
   <link href="http://hongxin1988.github.io/atom.xml" rel="self"/>
   <link href="http://hongxin1988.github.io/"/>
-  <updated>2014-10-27T19:48:10+08:00</updated>
+  <updated>2014-10-27T19:53:31+08:00</updated>
   <id>http://hongxin1988.github.io/</id>
   <author>
     <name><![CDATA[komac]]></name>
@@ -20,15 +20,13 @@
     <id>http://hongxin1988.github.io/blog/2014/10/27/birth-of-my-blog</id>
     <content type="html"><![CDATA[<h2>准备工作</h2>
 
-<p>申请一个github帐号:hongxin1988</p>
-
-<p>建一个名为hongxin1988.github.io的repo</p>
+<p>申请一个github帐号:hongxin1988<br>
+建一个名为hongxin1988.github.io的repo</p>
 
 <h2>安装msysgit</h2>
 
-<p>到<a href="http://msysgit.github.io/">这里</a>下载msysgit并安装</p>
-
-<p>配置ssh
+<p>到<a href="http://msysgit.github.io/">这里</a>下载msysgit并安装<br>
+配置ssh
     <code>
         ssh-keygen -C github-account-email -t rsa
    </code><br>
@@ -116,14 +114,11 @@ git push origin source
 
 <h2>参考资料</h2>
 
-<ul>
-<li><a href="http://octopress.org/docs/deploying/github/">octopress官方主页</a></li>
-<li><a href="http://linglong117.blog.163.com/blog/static/27714547201332895056387/">GitHub Pages 使用github + Octopress 搭建免费博客</a></li>
-<li><a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a></li>
-<li><a href="http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html">GotGitHub</a></li>
-<li><a href="http://havee.me/internet/2013-02/add-duoshuo-commemt-system-into-octopress.html">为 Octopress 添加多说评论系统</a></li>
-</ul>
-
+<p><a href="http://octopress.org/docs/deploying/github/">octopress官方主页</a><br>
+<a href="http://linglong117.blog.163.com/blog/static/27714547201332895056387/">GitHub Pages 使用github + Octopress 搭建免费博客</a><br>
+<a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a>
+<a href="http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html">GotGitHub</a><br>
+<a href="http://havee.me/internet/2013-02/add-duoshuo-commemt-system-into-octopress.html">为 Octopress 添加多说评论系统</a></p>
 
 <h2>感谢</h2>
 
