@@ -4,7 +4,7 @@
   <title><![CDATA[Komac的博客]]></title>
   <link href="http://hongxin1988.github.io/atom.xml" rel="self"/>
   <link href="http://hongxin1988.github.io/"/>
-  <updated>2014-10-27T15:54:06+08:00</updated>
+  <updated>2014-10-27T16:21:52+08:00</updated>
   <id>http://hongxin1988.github.io/</id>
   <author>
     <name><![CDATA[komac]]></name>
@@ -68,8 +68,8 @@ rake install # 安装默认的octopress主题
 <p>部署到github</p>
 
 <pre><code>rake setup_github_pages # 首先将octopress与github关联起来,根据提示完成即可
-rake generate** # 这个命令主要是根据source目录的内容，编译生成JeKyll所需要的静态文件，存放到public目录下
-rake deploy** # 该命令首先清空\_deploy目录，然后将public目录整个拷贝过来，然后commit到github。_deploy 目录对应着master分支。
+rake generate # 这个命令主要是根据source目录的内容，编译生成JeKyll所需要的静态文件，存放到public目录下
+rake deploy # 该命令首先清空\_deploy目录，然后将public目录整个拷贝过来，然后commit到github。_deploy 目录对应着master分支。
 </code></pre>
 
 <p>source 目录下保存了所有的markdown源文件，是博客的原始数据，以及一些模板文件。将Octopress 备份到source分支</p>
