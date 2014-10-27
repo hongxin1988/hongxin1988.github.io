@@ -4,7 +4,7 @@
   <title><![CDATA[Komac的博客]]></title>
   <link href="http://hongxin1988.github.io/atom.xml" rel="self"/>
   <link href="http://hongxin1988.github.io/"/>
-  <updated>2014-10-27T15:41:26+08:00</updated>
+  <updated>2014-10-27T15:50:25+08:00</updated>
   <id>http://hongxin1988.github.io/</id>
   <author>
     <name><![CDATA[komac]]></name>
@@ -53,7 +53,7 @@ gem install rdiscount --platform=ruby
 <p>安装octopress</p>
 
 <pre><code>cd d:\github
-git clone git://github.com/imathis/octopress.git octopress&lt;br&gt;
+git clone git://github.com/imathis/octopress.git octopress
 cd octopress
 ruby --version # Should report Ruby 1.9.3
 </code></pre>
@@ -83,7 +83,7 @@ git push origin source
 
 <h2>来一发 Hello World</h2>
 
-<pre><code>rake new\_post[\"hello world"] # 这个命令会在octopress\source\\\_posts目录下建一个markdown文件。按照markdown的格式往这个文件里写博客的内容即可。
+<pre><code>rake new_post["hello world"] # 这个命令会在octopress\source_posts目录下建一个markdown文件。按照markdown的格式往这个文件里写博客的内容即可。
 rake generate** # 生成最终的博客文件
 rake deploy # 将public目录下的内容拷贝到\_deploy目录下，并把内容commit且push到master分支。
 </code></pre>
@@ -92,9 +92,26 @@ rake deploy # 将public目录下的内容拷贝到\_deploy目录下，并把内�
 
 <p>做好备份。</p>
 
-<pre><code>git add -A
+<pre><code>git add .
 git commit -m "add a blog named hello world"
 git push origin source
+</code></pre>
+
+<h2>博客简单配置</h2>
+
+<h3>导航条</h3>
+
+<p>文字改成中文，并加上“我的微博”以及&#8221;关于我&#8221;。</p>
+
+<h3>添加多说评论</h3>
+
+<p>看<a href="http://havee.me/internet/2013-02/add-duoshuo-commemt-system-into-octopress.html">这里</a>就ok啦。</p>
+
+<h3>添加百度统计</h3>
+
+<p>注册百度统计帐号，将代码添加到下面这个文件即可：</p>
+
+<pre><code>source/_includes/after_footer.html
 </code></pre>
 
 <h2>参考资料</h2>
@@ -104,6 +121,7 @@ git push origin source
 <li><a href="http://linglong117.blog.163.com/blog/static/27714547201332895056387/">GitHub Pages 使用github + Octopress 搭建免费博客</a></li>
 <li><a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a></li>
 <li><a href="http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html">GotGitHub</a></li>
+<li><a href="http://havee.me/internet/2013-02/add-duoshuo-commemt-system-into-octopress.html">为 Octopress 添加多说评论系统</a></li>
 </ul>
 
 
