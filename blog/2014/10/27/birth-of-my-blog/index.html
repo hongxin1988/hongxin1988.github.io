@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Birth of My Blog - Komac的博客</title>
+  <meta name="author" content="komac">
+
+  
+  <meta name="description" content="准备工作 申请一个github帐号:hongxin1988 建一个名为hongxin1988.github.io的repo 安装msysgit 到这里下载msysgit并安装 配置ssh ssh-keygen -C github-account-email -t rsa 安装octopress &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://hongxin1988.github.io/blog/2014/10/27/birth-of-my-blog">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Komac的博客" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Komac的博客</a></h1>
+  
+    <h2>天才在于积累，聪明在于勤奋.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:hongxin1988.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">全部文章</a></li>
+  <li><a href="http://weibo.com/u/2072817314">我的微博</a></li>
+  <li><a href="">关于我</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Birth of My Blog</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-10-27T15:24:52+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>3:24 pm</span></time>
+        
+		
+          | <a href="#comments">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>准备工作</h2>
+
+<p>申请一个github帐号:hongxin1988</p>
+
+<p>建一个名为hongxin1988.github.io的repo</p>
+
+<h2>安装msysgit</h2>
+
+<p>到<a href="http://msysgit.github.io/">这里</a>下载msysgit并安装</p>
+
+<p>配置ssh
+    <code>
+        ssh-keygen -C github-account-email -t rsa
+   </code></p>
+
+<h2>安装octopress</h2>
+
+<p>Octopress2.0需要ruby1.9.3,我的机子是windows，可以通过RubyInstaller来安装.到<a href="http://rubyinstaller.org/downloads/">这里</a>下载<a href="http://dl.bintray.com/oneclick/rubyinstaller/ruby-1.9.3-p545-i386-mingw32.7z?direct">Ruby1.9.3-p545</a>以及<a href="https://github.com/downloads/oneclick/rubyinstaller/DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe">DevKit-tdm-32-4.5.2-20111229-1559-sfx.exe</a> 安装即可。也就是下面的1、2两步</p>
+
+<!--more-->
+
+
+<p>安装ruby，比较简单，直接双击即可。</p>
+
+<p>安装DevKit.先解压。然后进入目录，如下所示：</p>
+
+<pre><code>cd C:\DevKit&lt;br&gt;
+ruby dk.rb init&lt;br&gt;
+ruby dk.rb install&lt;br&gt;
+gem install rdiscount --platform=ruby
+</code></pre>
+
+<p>安装octopress</p>
+
+<pre><code>cd d:\github&lt;br&gt;
+git clone git://github.com/imathis/octopress.git octopress&lt;br&gt;
+cd octopress&lt;br&gt;
+ruby --version # Should report Ruby 1.9.3&lt;br&gt;
+rubygems.org在国内下载的速度会很慢，先切换到国内的镜像源，找到octopress下的Gemfile，修改第一行为： source "http://ruby.taobao.org"&lt;br&gt;
+bundle install # 在这之前我碰到问题，参见[这里](http://stackoverflow.com/questions/13897825/bundle-command-not-found-windows-x64)&lt;br&gt;
+rake install # 安装默认的octopress主题&lt;br&gt;
+</code></pre>
+
+<p>部署到github</p>
+
+<pre><code>首先将octopress与github关联起来: **rake setup_github_pages**,根据提示完成即可&lt;br&gt;
+rake generate** # 这个命令主要是根据source目录的内容，编译生成JeKyll所需要的静态文件，存放到public目录下&lt;br&gt;
+rake deploy** # 该命令首先清空\_deploy目录，然后将public目录整个拷贝过来，然后commit到github。_deploy 目录对应着master分支。
+</code></pre>
+
+<ul>
+<li>source 目录下保存了所有的markdown源文件，是博客的原始数据，以及一些模板文件。将Octopress 备份到source分支
+  git add -A<br>
+  git commit -m &ldquo;initial source file&rdquo;<br>
+  git push origin source<br/></li>
+</ul>
+
+
+<p>访问 <a href="http://hongxin1988.github.io">http://hongxin1988.github.io</a> 就可以看到一个初始化的博客主页了。接下来写第一篇博客，按照惯例，从Hello World 开始。</p>
+
+<h2>来一发 Hello World</h2>
+
+<ul>
+<li><strong>rake new_post[\&ldquo;hello world&rdquo;]</strong> # 这个命令会在octopress\source\_posts目录下建一个markdown文件。按照markdown的格式往这个文件里写博客的内容即可。</li>
+<li><strong>rake generate</strong> # 生成最终的博客文件</li>
+<li><strong>rake deploy</strong> # 将public目录下的内容拷贝到_deploy目录下，并把内容commit且push到master分支。</li>
+<li>访问博客主页，<a href="http://hongxin1988.github.io">http://hongxin1988.github.io</a> 即可。好兴奋  ^_^</li>
+<li><p>做好备份。</p>
+
+<p>  git add -A<br>
+  git commit -m &ldquo;add a blog named hello world&rdquo;<br>
+  git push origin source<br></p></li>
+</ul>
+
+
+<h2>参考资料</h2>
+
+<ul>
+<li><a href="http://octopress.org/docs/deploying/github/">octopress官方主页</a><br/></li>
+<li><a href="http://linglong117.blog.163.com/blog/static/27714547201332895056387/">GitHub Pages 使用github + Octopress 搭建免费博客</a><br/></li>
+<li><a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a><br/></li>
+<li><a href="http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html">GotGitHub</a></li>
+</ul>
+
+
+<h2>感谢</h2>
+
+<p> <a href="http://biaobiaoqi.me">biaobiaoqi</a> 和 <a href="http://heapstacks.com">heapstacks</a> 的指导让我在最短的时间内搭建好我的博客。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">komac</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-10-27T15:24:52+08:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>27</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>3:24 pm</span></time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/10/27/hello-world/" title="Previous Post: hello world">&laquo; hello world</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+
+  <section>
+    <h1>Comments</h1>
+    <div id="comments" aria-live="polite"><!-- Duoshuo Comment BEGIN -->
+<div class="ds-thread" data-title="Birth of My Blog"></div>
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"komac"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<!-- Duoshuo Comment END --></div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>最新发表</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/10/27/birth-of-my-blog/">Birth of My Blog</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/10/27/hello-world/">Hello World</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - komac -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0162509d3ae28421eebc058be9be0cd8' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+</html>
