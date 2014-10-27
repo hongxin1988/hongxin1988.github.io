@@ -4,7 +4,7 @@
   <title><![CDATA[Komac的博客]]></title>
   <link href="http://hongxin1988.github.io/atom.xml" rel="self"/>
   <link href="http://hongxin1988.github.io/"/>
-  <updated>2014-10-27T19:40:03+08:00</updated>
+  <updated>2014-10-27T19:48:10+08:00</updated>
   <id>http://hongxin1988.github.io/</id>
   <author>
     <name><![CDATA[komac]]></name>
@@ -31,7 +31,8 @@
 <p>配置ssh
     <code>
         ssh-keygen -C github-account-email -t rsa
-   </code></p>
+   </code><br>
+将 C:\Users\hongxin.ssh下id_rsa.pub文件中的内容加到github网站帐户settings下的ssh keys</p>
 
 <h2>安装octopress</h2>
 
@@ -40,9 +41,8 @@
 <!--more-->
 
 
-<p>安装ruby，比较简单，直接双击即可。</p>
-
-<p>安装DevKit.先解压。然后进入目录，如下所示：</p>
+<p>安装ruby，比较简单，直接双击即可。<br>
+安装DevKit.先解压。然后进入目录，如下所示：</p>
 
 <pre><code>cd C:\DevKit&lt;br&gt;
 ruby dk.rb init&lt;br&gt;
