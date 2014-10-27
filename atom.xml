@@ -4,7 +4,7 @@
   <title><![CDATA[Komac的博客]]></title>
   <link href="http://hongxin1988.github.io/atom.xml" rel="self"/>
   <link href="http://hongxin1988.github.io/"/>
-  <updated>2014-10-27T15:38:43+08:00</updated>
+  <updated>2014-10-27T15:41:26+08:00</updated>
   <id>http://hongxin1988.github.io/</id>
   <author>
     <name><![CDATA[komac]]></name>
@@ -61,15 +61,13 @@ ruby --version # Should report Ruby 1.9.3
 <p>rubygems.org在国内下载的速度会很慢，先切换到国内的镜像源，找到octopress下的Gemfile，修改第一行为： source &ldquo;<a href="http://ruby.taobao.org">http://ruby.taobao.org</a>&rdquo;</p>
 
 <pre><code>gem install bundler
-
 bundle install
-
 rake install # 安装默认的octopress主题
 </code></pre>
 
 <p>部署到github</p>
 
-<pre><code>首先将octopress与github关联起来: **rake setup_github_pages**,根据提示完成即可
+<pre><code>rake setup_github_pages # 首先将octopress与github关联起来,根据提示完成即可
 rake generate** # 这个命令主要是根据source目录的内容，编译生成JeKyll所需要的静态文件，存放到public目录下
 rake deploy** # 该命令首先清空\_deploy目录，然后将public目录整个拷贝过来，然后commit到github。_deploy 目录对应着master分支。
 </code></pre>
@@ -77,9 +75,7 @@ rake deploy** # 该命令首先清空\_deploy目录，然后将public目录整�
 <p>source 目录下保存了所有的markdown源文件，是博客的原始数据，以及一些模板文件。将Octopress 备份到source分支</p>
 
 <pre><code>git add -A
-
 git commit -m "initial source file"
-
 git push origin source
 </code></pre>
 
@@ -88,9 +84,7 @@ git push origin source
 <h2>来一发 Hello World</h2>
 
 <pre><code>rake new\_post[\"hello world"] # 这个命令会在octopress\source\\\_posts目录下建一个markdown文件。按照markdown的格式往这个文件里写博客的内容即可。
-
 rake generate** # 生成最终的博客文件
-
 rake deploy # 将public目录下的内容拷贝到\_deploy目录下，并把内容commit且push到master分支。
 </code></pre>
 
