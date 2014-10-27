@@ -4,7 +4,7 @@
   <title><![CDATA[Komac的博客]]></title>
   <link href="http://hongxin1988.github.io/atom.xml" rel="self"/>
   <link href="http://hongxin1988.github.io/"/>
-  <updated>2014-10-27T19:36:44+08:00</updated>
+  <updated>2014-10-27T19:40:03+08:00</updated>
   <id>http://hongxin1988.github.io/</id>
   <author>
     <name><![CDATA[komac]]></name>
@@ -85,7 +85,7 @@ git push origin source
 
 <pre><code>rake new_post["hello world"] # 这个命令会在octopress\source_posts目录下建一个markdown文件。按照markdown的格式往这个文件里写博客的内容即可。
 rake generate # 生成最终的博客文件
-rake deploy # 将public目录下的内容拷贝到\_deploy目录下，并把内容commit且push到master分支。
+rake deploy # 将public目录下的内容拷贝到_deploy目录下，并把内容commit且push到master分支。
 </code></pre>
 
 <p>访问博客主页，<a href="http://hongxin1988.github.io">http://hongxin1988.github.io</a> 即可。好兴奋  ^_^</p>
