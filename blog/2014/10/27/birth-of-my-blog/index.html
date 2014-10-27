@@ -123,53 +123,63 @@ gem install rdiscount --platform=ruby
 
 <p>安装octopress</p>
 
-<pre><code>cd d:\github&lt;br&gt;
+<pre><code>cd d:\github
 git clone git://github.com/imathis/octopress.git octopress&lt;br&gt;
-cd octopress&lt;br&gt;
-ruby --version # Should report Ruby 1.9.3&lt;br&gt;
-rubygems.org在国内下载的速度会很慢，先切换到国内的镜像源，找到octopress下的Gemfile，修改第一行为： source "http://ruby.taobao.org"&lt;br&gt;
-bundle install # 在这之前我碰到问题，参见[这里](http://stackoverflow.com/questions/13897825/bundle-command-not-found-windows-x64)&lt;br&gt;
-rake install # 安装默认的octopress主题&lt;br&gt;
+cd octopress
+ruby --version # Should report Ruby 1.9.3
+</code></pre>
+
+<p>rubygems.org在国内下载的速度会很慢，先切换到国内的镜像源，找到octopress下的Gemfile，修改第一行为： source &ldquo;<a href="http://ruby.taobao.org">http://ruby.taobao.org</a>&rdquo;</p>
+
+<pre><code>gem install bundler
+
+bundle install
+
+rake install # 安装默认的octopress主题
 </code></pre>
 
 <p>部署到github</p>
 
-<pre><code>首先将octopress与github关联起来: **rake setup_github_pages**,根据提示完成即可&lt;br&gt;
-rake generate** # 这个命令主要是根据source目录的内容，编译生成JeKyll所需要的静态文件，存放到public目录下&lt;br&gt;
+<pre><code>首先将octopress与github关联起来: **rake setup_github_pages**,根据提示完成即可
+rake generate** # 这个命令主要是根据source目录的内容，编译生成JeKyll所需要的静态文件，存放到public目录下
 rake deploy** # 该命令首先清空\_deploy目录，然后将public目录整个拷贝过来，然后commit到github。_deploy 目录对应着master分支。
 </code></pre>
 
-<ul>
-<li>source 目录下保存了所有的markdown源文件，是博客的原始数据，以及一些模板文件。将Octopress 备份到source分支
-  git add -A<br>
-  git commit -m &ldquo;initial source file&rdquo;<br>
-  git push origin source<br/></li>
-</ul>
+<p>source 目录下保存了所有的markdown源文件，是博客的原始数据，以及一些模板文件。将Octopress 备份到source分支</p>
 
+<pre><code>git add -A
+
+git commit -m "initial source file"
+
+git push origin source
+</code></pre>
 
 <p>访问 <a href="http://hongxin1988.github.io">http://hongxin1988.github.io</a> 就可以看到一个初始化的博客主页了。接下来写第一篇博客，按照惯例，从Hello World 开始。</p>
 
 <h2>来一发 Hello World</h2>
 
-<ul>
-<li><strong>rake new_post[\&ldquo;hello world&rdquo;]</strong> # 这个命令会在octopress\source\_posts目录下建一个markdown文件。按照markdown的格式往这个文件里写博客的内容即可。</li>
-<li><strong>rake generate</strong> # 生成最终的博客文件</li>
-<li><strong>rake deploy</strong> # 将public目录下的内容拷贝到_deploy目录下，并把内容commit且push到master分支。</li>
-<li>访问博客主页，<a href="http://hongxin1988.github.io">http://hongxin1988.github.io</a> 即可。好兴奋  ^_^</li>
-<li><p>做好备份。</p>
+<pre><code>rake new\_post[\"hello world"] # 这个命令会在octopress\source\\\_posts目录下建一个markdown文件。按照markdown的格式往这个文件里写博客的内容即可。
 
-<p>  git add -A<br>
-  git commit -m &ldquo;add a blog named hello world&rdquo;<br>
-  git push origin source<br></p></li>
-</ul>
+rake generate** # 生成最终的博客文件
 
+rake deploy # 将public目录下的内容拷贝到\_deploy目录下，并把内容commit且push到master分支。
+</code></pre>
+
+<p>访问博客主页，<a href="http://hongxin1988.github.io">http://hongxin1988.github.io</a> 即可。好兴奋  ^_^</p>
+
+<p>做好备份。</p>
+
+<pre><code>git add -A
+git commit -m "add a blog named hello world"
+git push origin source
+</code></pre>
 
 <h2>参考资料</h2>
 
 <ul>
-<li><a href="http://octopress.org/docs/deploying/github/">octopress官方主页</a><br/></li>
-<li><a href="http://linglong117.blog.163.com/blog/static/27714547201332895056387/">GitHub Pages 使用github + Octopress 搭建免费博客</a><br/></li>
-<li><a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a><br/></li>
+<li><a href="http://octopress.org/docs/deploying/github/">octopress官方主页</a></li>
+<li><a href="http://linglong117.blog.163.com/blog/static/27714547201332895056387/">GitHub Pages 使用github + Octopress 搭建免费博客</a></li>
+<li><a href="http://beyondvincent.com/blog/2013/08/03/108-creating-a-github-blog-using-octopress/">利用Octopress搭建一个Github博客</a></li>
 <li><a href="http://www.worldhello.net/gotgithub/03-project-hosting/050-homepage.html">GotGitHub</a></li>
 </ul>
 
